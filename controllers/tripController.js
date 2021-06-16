@@ -20,8 +20,25 @@ const BestInstaSpot = require('../models/things-to-do/bestInstaSpot.js')
 const UltimateBucketList = require('../models/things-to-do/ultimateBucketList.js')
 const Resource = require('../models/things-to-do/resource.js')
 
+// ===============================================
+// Homepage Route
+// ===============================================
 router.get('/', (req, res) => {
-  res.send(`CASTAWAYS, WE ARE CASTAWAYS`)
+  res.render('index.ejs')
+})
+
+// ===============================================
+// Trip Routes
+// ===============================================
+
+// Shows all trips page
+router.get('/trips', (req, res) => {
+  res.render('trips/trips.ejs')
+})
+
+// Shows individual trip 
+router.get('/:trip', (req, res) => {
+  res.render('trips/trip.ejs')
 })
 
 module.exports = router

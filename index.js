@@ -1,10 +1,18 @@
 // Initializing Express
 const express = require('express')
 const app = express()
+const ejsLayouts = require('express-ejs-layouts')
 
 // Middleware
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+
+// ===============================================
+// Bringing in EJS
+// ===============================================
+app.set('view engine', 'ejs')
+app.use(ejsLayouts)
+app.use(express.static('public'))
 
 // ===============================================
 // Bringing in Controllers 
