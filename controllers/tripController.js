@@ -23,8 +23,13 @@ const Resource = require('../models/things-to-do/resource.js')
 // ===============================================
 // Homepage Route
 // ===============================================
+// Testing JSON
 router.get('/', (req, res) => {
-  res.render('index.ejs')
+  // res.render('index.ejs')
+  Trip.find({})
+  .then((trips) => {
+    res.json(trips)
+  })
 })
 
 // ===============================================

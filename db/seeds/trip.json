@@ -1,0 +1,17 @@
+[
+  {
+    "tripName": "Europe Trip 2021",
+    "tripDates": "September 19, 2021 - October 20,2021",
+    "destinations": ["Florence", "Rome", "Milan", "Cinque Terre"]
+  },
+  {
+    "tripName": "Europe Trip 2022",
+    "tripDates": "Febryary 19, 2022 - March 20,2022",
+    "destinations": ["Paris", "London", "Berlin", "Amsterdam"]
+  },
+  {
+    "tripName": "Costa Rica 2022",
+    "tripDates": "August 19, 2022 - September 20,2022",
+    "destinations": ["San Jose", "La Fortuna"]
+  }
+]
