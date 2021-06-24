@@ -1,17 +1,45 @@
 [
-  {
-    "tripName": "Europe Trip 2021",
-    "tripDates": "September 19, 2021 - October 20,2021",
-    "cities": ["Florence", "Rome", "Milan", "Cinque Terre"]
-  },
-  {
-    "tripName": "Europe Trip 2022",
-    "tripDates": "Febryary 19, 2022 - March 20,2022",
-    "cities": ["Paris", "London", "Berlin", "Amsterdam"]
-  },
-  {
-    "tripName": "Costa Rica 2022",
-    "tripDates": "August 19, 2022 - September 20,2022",
-    "cities": ["San Jose", "La Fortuna"]
-  }
+    {
+      "tripName": "Europe Trip 2021",
+      "tripDates": "September 19, 2021 - October 20,2021",
+      "cities": [
+        {
+          "city": "Lisbon",
+          "country": "Portugal", 
+          "description": "Woke thundercats flexitarian portland occupy paleo vinyl umami chicharrones mixtape.",
+          "neighboringCities": ["Sintra", "Lagos"],
+          "neighboringCountries": ["Spain"],
+          "timeZone": "GMT-8",
+          "thingstoDo": ["Seed this data in later"]
+        }
+      ]
+    },
+    {
+      "tripName": "Europe Trip 2022",
+      "tripDates": "Febryary 19, 2022 - March 20,2022",
+      "cities": [
+        {
+          "city": "Florence",
+          "country": "Italy", 
+          "description": "Single-origin coffee meggings readymade, leggings literally edison bulb heirloom kinfolk flexitarian trust fund beard",
+          "neighboringCities": ["Sienna", "Turin"],
+          "neighboringCountries": ["Switzerland", "Spain"],
+          "timeZone": "GMT-7",
+          "thingstoDo": ["Seed this data in later"]
+        },
+        {
+          "city": "Pisa",
+          "country": "Italy", 
+          "description": "Single-origin coffee meggings readymade, leggings literally edison bulb heirloom kinfolk flexitarian trust fund beard",
+          "neighboringCities": ["Sienna", "Turin"],
+          "neighboringCountries": ["Switzerland", "Spain"],
+          "timeZone": "GMT-7",
+          "thingstoDo": ["Seed this data in later"]
+        }
+      ]
+    },
+    {
+      "tripName": "Costa Rica 2022",
+      "tripDates": "August 19, 2022 - September 20,2022"
+    }
 ]

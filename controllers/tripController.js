@@ -28,6 +28,7 @@ router.get('/', (req, res) => {
   // res.render('index.ejs')
   Trip.find({})
   .then((trips) => {
+    // console.log(trips[0].cities[0].city)
     res.json(trips)
   })
 })

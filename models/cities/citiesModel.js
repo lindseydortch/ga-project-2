@@ -13,9 +13,10 @@ const CitySchema = new mongoose.Schema(
     description: String,
     neighboringCities: [String],
     neighboringCountries: [String], 
-    timeZone: String
+    timeZone: String,
     // Add in place to populate things to do
     // Group all of these into one model 
+    thingsToDo: [String]
   },
   {timestamps: true}
 )

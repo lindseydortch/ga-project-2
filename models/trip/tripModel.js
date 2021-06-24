@@ -1,4 +1,5 @@
 const mongoose = require('../../db/connections/connection')
+const City = require('../cities/citiesModel')
 
 const TripSchema = new mongoose.Schema(
   {
@@ -7,7 +8,25 @@ const TripSchema = new mongoose.Schema(
       required: true
     },
     tripDates: String,
-    cities: [String]
+    cities: [
+      {
+        city: {
+          type: String, 
+          required: true
+        }, 
+        country: {
+          type: String, 
+          required: true
+        }, 
+        description: String,
+        neighboringCities: [String],
+        neighboringCountries: [String], 
+        timeZone: String,
+        // Add in place to populate things to do
+        // Group all of these into one model 
+        thingsToDo: [String]
+      }
+    ]
   },
   {timestamps: true}
 )

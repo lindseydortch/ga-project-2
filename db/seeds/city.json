@@ -1,0 +1,22 @@
+[
+  [
+  {
+    "city": "Lisbon",
+    "country": "Portugal", 
+    "description": "Woke thundercats flexitarian portland occupy paleo vinyl umami chicharrones mixtape.",
+    "neighboringCities": ["Sintra", "Lagos"],
+    "neighboringCountries": ["Spain"],
+    "timeZone": "GMT-8",
+    "thingstoDo": ["Seed this data in later"]
+  },
+  {
+    "city": "Florence",
+    "country": "Italy", 
+    "description": "Single-origin coffee meggings readymade, leggings literally edison bulb heirloom kinfolk flexitarian trust fund beard",
+    "neighboringCities": ["Sienna", "Turin"],
+    "neighboringCountries": ["Switzerland", "Spain"],
+    "timeZone": "GMT-7",
+    "thingstoDo": ["Seed this data in later"]
+  }
+]
+]
