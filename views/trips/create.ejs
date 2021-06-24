@@ -1,1 +1,14 @@
 <h1>You are on the create route for the trips</h1>
+
+<form action="/trips" method="POST">
+  <div class="form-group">
+    <label for="tripName">Trip Name:</label>
+    <input type="text" name="tripName" id="tripName">
+  </div>
+  <div class="form-group">
+    <label for="tripDates">Trip Dates:</label>
+    <input type="text" name="tripDates" id="tripDates">
+  </div>
+  <input type="submit" value="submit">
+  <a href="/trips">Cancel</a>
+</form>

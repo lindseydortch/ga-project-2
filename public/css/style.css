@@ -1,3 +1,10 @@
 h1 {
   color: red;
 }
+
+div {
+  display: block;
+}
+div p {
+  display: inline;
+}

@@ -1,1 +1,24 @@
 <h1>Welcome to the Trip page</h1>
+
+<% trips.forEach((trip)=> { %>
+  <div>
+    <p>
+      <%= trip.tripName %> |
+    </p>
+    <p>
+      <%= trip.tripDates %> |
+    </p>
+    <p>
+      ID should be here: <%= trip._id %>
+    </p>
+    <a href="/trips/<%= trip._id%>">Show Me this trip</a>
+    <form action="/trips/<%= trip._id%>/?_method=DELETE" method="POST">
+      <input type="submit" value="Delete This Trip">
+    </form>
+    <% }) %>
+  </div>
+
+
+
+  <a href="/createTrip">+</a>
+  <a href="">update</a>
