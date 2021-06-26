@@ -1,0 +1,39 @@
+// ==================================================================
+// VARIABLES
+// ==================================================================
+
+// FONTS 
+$display-font: 'Staatliches', cursive;
+
+// COLORS 
+$blue-light: #008AF2;
+$blue-dark: #005FA6;
+$orange-light: #f29b18;
+$orange-dark: #f18f01;
+$purple-light: #8518f2;
+$purple-dark: #5708A6;
+$white: #fff;
+$black: #000;
+$grey-light: #ccc;
+$grey-dark: #333;
+
+// ==================================================================
+// BASE STYLES
+// ==================================================================
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $display-font;
+}

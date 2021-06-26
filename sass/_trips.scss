@@ -1,0 +1,45 @@
+.trips-section {
+  padding: 6rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.trips {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.trip {
+  padding: 6rem;
+  border: 1px solid $grey-light;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+  margin-top: 4rem;
+
+
+  &_dates {
+    font-size: 1.6rem;
+    color: $blue-light;
+    margin-top: .5rem;
+  }
+
+  & .cities {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  & .city {
+    font-size: 1.4rem;
+    color: $purple-dark;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}

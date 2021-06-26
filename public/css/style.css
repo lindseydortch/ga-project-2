@@ -1,10 +1,181 @@
-h1 {
-  color: red;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-div {
-  display: block;
+html {
+  font-size: 62.5%;
 }
-div p {
-  display: inline;
+
+body {
+  box-sizing: border-box;
+  font-family: "Staatliches", cursive;
 }
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  color: #f18f01;
+}
+
+.oLight {
+  color: #f29b18;
+}
+
+.oDark {
+  color: #f18f01;
+}
+
+.pLight {
+  color: #8518f2;
+}
+
+.pDark {
+  color: #5708A6;
+}
+
+.bLight {
+  color: #008AF2;
+}
+
+.bDark {
+  color: #005FA6;
+}
+
+.add {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.addOrange {
+  font-size: 2rem;
+  background-image: linear-gradient(to right, #f29b18, #f18f01);
+  color: #fff;
+}
+
+.form {
+  display: inline-block;
+}
+.form:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.u-margin-top-sm {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+}
+
+.btnOrange {
+  background-image: linear-gradient(to right, #f29b18, #f18f01);
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.navBtn {
+  font-size: 3rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+  border-top: 2px solid #ccc;
+  box-shadow: 0rem -0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.social_link {
+  text-decoration: none;
+  color: #5708A6;
+  margin: 1rem;
+}
+
+.social_icon {
+  font-size: 2.5rem;
+}
+
+.legal__text {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: #f18f01;
+}
+
+.trips-section {
+  padding: 6rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.trips {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.trip {
+  padding: 6rem;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+  margin-top: 4rem;
+}
+.trip_dates {
+  font-size: 1.6rem;
+  color: #008AF2;
+  margin-top: 0.5rem;
+}
+.trip .cities {
+  display: flex;
+  margin-top: 1rem;
+}
+.trip .city {
+  font-size: 1.4rem;
+  color: #5708A6;
+}
+.trip .city:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

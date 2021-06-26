@@ -2,21 +2,24 @@ const mongoose = require('../../db/connections/connection')
 
 const CitySchema = new mongoose.Schema(
   {
-    city: {
-      type: String, 
-      required: true
-    }, 
-    country: {
-      type: String, 
-      required: true
-    }, 
+    trip: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Trip'
+    },
+    city: String, 
+    country: String, 
     description: String,
     neighboringCities: [String],
     neighboringCountries: [String], 
     timeZone: String,
     // Add in place to populate things to do
     // Group all of these into one model 
-    thingsToDo: [String]
+    // thingsToDo: [
+    //   {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'ThingsToDo'
+    //   }
+    // ]
   },
   {timestamps: true}
 )

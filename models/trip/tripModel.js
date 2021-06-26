@@ -10,23 +10,11 @@ const TripSchema = new mongoose.Schema(
     tripDates: String,
     cities: [
       {
-        city: {
-          type: String, 
-          required: true
-        }, 
-        country: {
-          type: String, 
-          required: true
-        }, 
-        description: String,
-        neighboringCities: [String],
-        neighboringCountries: [String], 
-        timeZone: String,
-        // Add in place to populate things to do
-        // Group all of these into one model 
-        thingsToDo: [String]
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'City'
       }
-    ]
+    ], 
+    thingsToDoCategories: String
   },
   {timestamps: true}
 )

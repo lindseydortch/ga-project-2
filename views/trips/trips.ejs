@@ -1,6 +1,90 @@
-<h1>Welcome to the Trip page</h1>
+<section class="trips-section">
+  <i class="fas fa-plus add addOrange"></i>
+  <h2>
+    <span class="oLight">My</span>
+    <span class="pLight">Trips</span>
+  </h2>
+  <div class="trips">
+    <div class="trip">
+      <h3 class="trip_heading">Trip Name</h3>
+      <p class="trip_dates">September 5, 2021 - October 4, 2021</p>
+      <div class="cities">
+        <p class="city">City 1</p>
+        <p class="city">City 2</p>
+        <p class="city">City 3</p>
+      </div>
+      <div class="form form-update">
+        <form action="" method="POST">
+          <input type="submit" value="Update" class="btn btnOrange u-margin-top-sm">
+        </form>
+      </div>
+      <div class="form form-delete">
+        <form action="" method="POST">
+          <input type="submit" value="Delete" class="btn btnOrange u-margin-top-sm">
+        </form>
+      </div>
+    </div>
+    <div class="trip">
+      <h3 class="trip_heading">Trip Name</h3>
+      <p class="trip_dates">September 5, 2021 - October 4, 2021</p>
+      <div class="cities">
+        <p class="city">City 1</p>
+        <p class="city">City 2</p>
+        <p class="city">City 3</p>
+      </div>
+      <div class="form form-update">
+        <form action="" method="POST">
+          <input type="submit" value="Update" class="btn btnOrange u-margin-top-sm">
+        </form>
+      </div>
+      <div class="form form-delete">
+        <form action="" method="POST">
+          <input type="submit" value="Delete" class="btn btnOrange u-margin-top-sm">
+        </form>
+      </div>
+    </div>
+    <div class="trip">
+      <h3 class="trip_heading">Trip Name</h3>
+      <p class="trip_dates">September 5, 2021 - October 4, 2021</p>
+      <div class="cities">
+        <p class="city">City 1</p>
+        <p class="city">City 2</p>
+        <p class="city">City 3</p>
+      </div>
+      <div class="form form-update">
+        <form action="" method="POST">
+          <input type="submit" value="Update" class="btn btnOrange u-margin-top-sm">
+        </form>
+      </div>
+      <div class="form form-delete">
+        <form action="" method="POST">
+          <input type="submit" value="Delete" class="btn btnOrange u-margin-top-sm">
+        </form>
+      </div>
+    </div>
+    <div class="trip">
+      <h3 class="trip_heading">Trip Name</h3>
+      <p class="trip_dates">September 5, 2021 - October 4, 2021</p>
+      <div class="cities">
+        <p class="city">City 1</p>
+        <p class="city">City 2</p>
+        <p class="city">City 3</p>
+      </div>
+      <div class="form form-update">
+        <form action="" method="POST">
+          <input type="submit" value="Update" class="btn btnOrange u-margin-top-sm">
+        </form>
+      </div>
+      <div class="form form-delete">
+        <form action="" method="POST">
+          <input type="submit" value="Delete" class="btn btnOrange u-margin-top-sm">
+        </form>
+      </div>
+    </div>
+  </div>
 
-<% trips.forEach((trip)=> { %>
+</section>
+<!-- <% trips.forEach((trip)=> { %>
   <div>
     <p>
       <%= trip.tripName %> |
@@ -8,20 +92,23 @@
     <p>
       <%= trip.tripDates %> |
     </p>
-    <% trip.cities.forEach((dest)=> { %>
+    <p>
+      Cities here: <%= trip.cities %>
+    </p>
+    <!-- <% trip.cities.forEach((dest)=> { %>
       <p>
         Cities: <%= dest.city %>,
       </p>
-      <% }) %>
+      <% }) %> -->
 
-        <a href="/trips/<%= trip._id%>">Show Me this trip</a>
-        <form action="/trips/<%= trip._id%>/?_method=DELETE" method="POST">
-          <input type="submit" value="Delete This Trip">
-        </form>
-        <% }) %>
+<!-- <a href="/trips/<%= trip._id%>">Show Me this trip</a>
+<form action="/trips/<%= trip._id%>/?_method=DELETE" method="POST">
+  <input type="submit" value="Delete This Trip">
+</form>
+<% }) %>
   </div>
 
 
 
-  <a href="/createTrip">+</a>
-  <a href="">update</a>
+  <a href="/trips/add">+</a>
+  <a href="">update</a>  -->

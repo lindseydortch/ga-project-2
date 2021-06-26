@@ -27,6 +27,7 @@ const Resource = require('../models/things-to-do/resource.js')
 router.get('/', (req, res) => {
   // res.render('index.ejs')
   Trip.find({})
+  .populate('thingsToDoCategories')
   .then((trips) => {
     // console.log(trips[0].cities[0].city)
     res.json(trips)
@@ -44,7 +45,9 @@ router.get('/trips', (req, res) => {
   // res.render('trips/trips.ejs', {trips: trips})
 })
 
-
+router.get('/trips/add', (req, res) => {
+  res.render('trips/create.ejs')
+})
 
 // Post for create a trip
 router.post('/trips', (req, res) => {
