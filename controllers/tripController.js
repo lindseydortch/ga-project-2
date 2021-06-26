@@ -6,19 +6,19 @@ const router = express.Router()
 // ===============================================
 
 // Trip 
-const Trip = require('../models/trip/tripModel.js')
+const Trip = require('../models/Trip.js')
 
 // // Cities 
-const City = require('../models/cities/citiesModel.js')
+// const City = require('../models/cities/citiesModel.js')
 
-// Things to Do 
-const FamousLandmark = require('../models/things-to-do/famousLandmark.js')
-const Restuarant = require('../models/things-to-do/restaurant.js')
-const Neighbourhood = require('../models/things-to-do/neighborhood.js')
-const OffTheBeatenPath = require('../models/things-to-do/offTheBeatenPath.js')
-const BestInstaSpot = require('../models/things-to-do/bestInstaSpot.js')
-const UltimateBucketList = require('../models/things-to-do/ultimateBucketList.js')
-const Resource = require('../models/things-to-do/resource.js')
+// // Things to Do 
+// const FamousLandmark = require('../models/things-to-do/famousLandmark.js')
+// const Restuarant = require('../models/things-to-do/restaurant.js')
+// const Neighbourhood = require('../models/things-to-do/neighborhood.js')
+// const OffTheBeatenPath = require('../models/things-to-do/offTheBeatenPath.js')
+// const BestInstaSpot = require('../models/things-to-do/bestInstaSpot.js')
+// const UltimateBucketList = require('../models/things-to-do/ultimateBucketList.js')
+// const Resource = require('../models/things-to-do/resource.js')
 
 // ===============================================
 // Homepage Route
@@ -27,7 +27,6 @@ const Resource = require('../models/things-to-do/resource.js')
 router.get('/', (req, res) => {
   // res.render('index.ejs')
   Trip.find({})
-  .populate('thingsToDoCategories')
   .then((trips) => {
     // console.log(trips[0].cities[0].city)
     res.json(trips)

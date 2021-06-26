@@ -68,10 +68,12 @@ h3 {
   font-size: 2rem;
   background-image: linear-gradient(to right, #f29b18, #f18f01);
   color: #fff;
+  cursor: pointer;
 }
 
 .form {
   display: inline-block;
+  cursor: pointer;
 }
 .form:not(:last-child) {
   margin-right: 1rem;
@@ -79,6 +81,10 @@ h3 {
 
 .u-margin-top-sm {
   margin-top: 1.5rem;
+}
+
+.u-margin-right-sm {
+  margin-right: 1rem;
 }
 
 .btn {
@@ -90,11 +96,16 @@ h3 {
   font-family: inherit;
   letter-spacing: 0.2rem;
   display: inline-block;
+  cursor: pointer;
 }
 
 .btnOrange {
   background-image: linear-gradient(to right, #f29b18, #f18f01);
   color: #fff;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .header {
@@ -138,23 +149,19 @@ h3 {
 }
 
 .trips-section {
-  padding: 6rem 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 12rem 0;
   position: relative;
 }
 
 .trips {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
 
 .trip {
+  width: 30%;
   padding: 6rem;
   border: 1px solid #ccc;
   border-radius: 2rem;
@@ -168,10 +175,11 @@ h3 {
 }
 .trip .cities {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 1rem;
 }
 .trip .city {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #5708A6;
 }
 .trip .city:not(:last-child) {

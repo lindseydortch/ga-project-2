@@ -1,114 +1,41 @@
 <section class="trips-section">
-  <i class="fas fa-plus add addOrange"></i>
+  <a href="/trips/add" class="link">
+    <i class="fas fa-plus add addOrange"></i>
+  </a>
   <h2>
     <span class="oLight">My</span>
     <span class="pLight">Trips</span>
   </h2>
+
+
   <div class="trips">
-    <div class="trip">
-      <h3 class="trip_heading">Trip Name</h3>
-      <p class="trip_dates">September 5, 2021 - October 4, 2021</p>
-      <div class="cities">
-        <p class="city">City 1</p>
-        <p class="city">City 2</p>
-        <p class="city">City 3</p>
+    <% trips.forEach((trip)=> { %>
+      <div class="trip">
+        <h3 class="trip_heading">
+          <%= trip.tripName %>
+        </h3>
+        <p class="trip_dates">
+          <%= trip.tripDates %>
+        </p>
+        <div class="cities">
+          <% trip.cities.forEach((city)=> {%>
+            <p class="city">
+              <%= city %>
+            </p>
+            <% }) %>
+        </div>
+        <a href="/trips/<%= trip._id%>" class="btn btnOrange link u-margin-right-sm">See trip</a>
+        <a href="/trips/<%= trip._id%>/edit" class="btn btnOrange link u-margin-right-sm">Update</a>
+        <div class="form form-delete">
+          <form action="/trips/<%= trip._id%>/?_method=DELETE" method="POST">
+            <input type="submit" value="Delete" class="btn btnOrange u-margin-top-sm">
+          </form>
+        </div>
       </div>
-      <div class="form form-update">
-        <form action="" method="POST">
-          <input type="submit" value="Update" class="btn btnOrange u-margin-top-sm">
-        </form>
-      </div>
-      <div class="form form-delete">
-        <form action="" method="POST">
-          <input type="submit" value="Delete" class="btn btnOrange u-margin-top-sm">
-        </form>
-      </div>
-    </div>
-    <div class="trip">
-      <h3 class="trip_heading">Trip Name</h3>
-      <p class="trip_dates">September 5, 2021 - October 4, 2021</p>
-      <div class="cities">
-        <p class="city">City 1</p>
-        <p class="city">City 2</p>
-        <p class="city">City 3</p>
-      </div>
-      <div class="form form-update">
-        <form action="" method="POST">
-          <input type="submit" value="Update" class="btn btnOrange u-margin-top-sm">
-        </form>
-      </div>
-      <div class="form form-delete">
-        <form action="" method="POST">
-          <input type="submit" value="Delete" class="btn btnOrange u-margin-top-sm">
-        </form>
-      </div>
-    </div>
-    <div class="trip">
-      <h3 class="trip_heading">Trip Name</h3>
-      <p class="trip_dates">September 5, 2021 - October 4, 2021</p>
-      <div class="cities">
-        <p class="city">City 1</p>
-        <p class="city">City 2</p>
-        <p class="city">City 3</p>
-      </div>
-      <div class="form form-update">
-        <form action="" method="POST">
-          <input type="submit" value="Update" class="btn btnOrange u-margin-top-sm">
-        </form>
-      </div>
-      <div class="form form-delete">
-        <form action="" method="POST">
-          <input type="submit" value="Delete" class="btn btnOrange u-margin-top-sm">
-        </form>
-      </div>
-    </div>
-    <div class="trip">
-      <h3 class="trip_heading">Trip Name</h3>
-      <p class="trip_dates">September 5, 2021 - October 4, 2021</p>
-      <div class="cities">
-        <p class="city">City 1</p>
-        <p class="city">City 2</p>
-        <p class="city">City 3</p>
-      </div>
-      <div class="form form-update">
-        <form action="" method="POST">
-          <input type="submit" value="Update" class="btn btnOrange u-margin-top-sm">
-        </form>
-      </div>
-      <div class="form form-delete">
-        <form action="" method="POST">
-          <input type="submit" value="Delete" class="btn btnOrange u-margin-top-sm">
-        </form>
-      </div>
-    </div>
+      <% }) %>
+  </div>
+
+
   </div>
 
 </section>
-<!-- <% trips.forEach((trip)=> { %>
-  <div>
-    <p>
-      <%= trip.tripName %> |
-    </p>
-    <p>
-      <%= trip.tripDates %> |
-    </p>
-    <p>
-      Cities here: <%= trip.cities %>
-    </p>
-    <!-- <% trip.cities.forEach((dest)=> { %>
-      <p>
-        Cities: <%= dest.city %>,
-      </p>
-      <% }) %> -->
-
-<!-- <a href="/trips/<%= trip._id%>">Show Me this trip</a>
-<form action="/trips/<%= trip._id%>/?_method=DELETE" method="POST">
-  <input type="submit" value="Delete This Trip">
-</form>
-<% }) %>
-  </div>
-
-
-
-  <a href="/trips/add">+</a>
-  <a href="">update</a>  -->

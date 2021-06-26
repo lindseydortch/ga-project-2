@@ -62,10 +62,12 @@ h3 {
   font-size: 2rem;
   background-image: linear-gradient(to right, $orange-light, $orange-dark);
   color: $white;
+  cursor: pointer;
 }
 
 .form {
   display: inline-block;
+  cursor: pointer;
 
   &:not(:last-child) {
     margin-right: 1rem;
@@ -74,6 +76,10 @@ h3 {
 
 .u-margin-top-sm {
   margin-top: 1.5rem;
+}
+
+.u-margin-right-sm {
+  margin-right: 1rem;
 }
 
 .btn {
@@ -85,9 +91,14 @@ h3 {
   font-family: inherit;
   letter-spacing: .2rem;
   display: inline-block;
+  cursor: pointer;
 }
 
 .btnOrange {
   background-image: linear-gradient(to right, $orange-light, $orange-dark);
   color: $white;
+}
+
+.link {
+  text-decoration: none;
 }
