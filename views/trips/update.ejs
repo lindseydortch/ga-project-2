@@ -1,14 +1,27 @@
-<h1>You are on the update route for the trips</h1>
+<section class="updateForm">
+  <div class="formContainer formContainer--orange">
+    <h2 class="u-text-align-left pLight">
+      Update the <%= trip.tripName %> Trip
+    </h2>
 
-<form action="/trips/<%= trip._id%>/?_method=put" method="POST">
-  <div class="form-group">
-    <label for="tripName">Trip Name:</label>
-    <input type="text" name="tripName" id="tripName">
+    <form action="/trips/<%= trip._id%>/?_method=put" method="POST" class="u-margin-top-med trueForm">
+      <div class="form-group">
+        <label for="tripName">Trip Name</label>
+        <input type="text" name="tripName" id="tripName" placeholder="Trip Name" value="<%= trip.tripName %>">
+      </div>
+      <div class="form-group">
+        <label for="tripDates">Trip Dates</label>
+        <input type="text" name="tripDates" id="tripDates" placeholder="Trip Dates" value="<%= trip.tripDates %>">
+      </div>
+      <div class="form-group">
+        <label for="cities">Add a City</label>
+        <input type="text" name="cities" id="cities" placeholder="Add a City" value="<%= trip.cities %>">
+      </div>
+
+      <input type="submit" value="submit" class="btn btnPurple">
+      <a href="/trips/<%= trip._id%>" class="btn btnRed link width-100 u-text-align-center">Cancel</a>
+    </form>
   </div>
-  <div class="form-group">
-    <label for="tripDates">Trip Dates:</label>
-    <input type="text" name="tripDates" id="tripDates">
-  </div>
-  <input type="submit" value="submit">
-  <a href="/trips/<%= trip._id%>">Cancel</a>
-</form>
+
+
+</section>

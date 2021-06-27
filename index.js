@@ -14,7 +14,7 @@ app.use(methodOverride('_method'))
 // ===============================================
 app.set('view engine', 'ejs')
 app.use(ejsLayouts)
-app.use(express.static('public'))
+app.use(express.static(__dirname + '/public'))
 
 // ===============================================
 // Bringing in Controllers 

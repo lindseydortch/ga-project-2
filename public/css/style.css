@@ -12,7 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Staatliches", cursive;
+  font-family: "Staatliches";
 }
 
 h1 {
@@ -26,10 +26,18 @@ h2 {
   letter-spacing: 1rem;
 }
 
+h2.orangeLight {
+  color: #f29b18;
+}
+
 h3 {
   font-size: 2.5rem;
   letter-spacing: 0.5rem;
   color: #f18f01;
+}
+
+.heading-2 {
+  font-size: 5rem;
 }
 
 .oLight {
@@ -83,8 +91,20 @@ h3 {
   margin-top: 1.5rem;
 }
 
+.u-margin-top-med {
+  margin-top: 2.5rem;
+}
+
 .u-margin-right-sm {
   margin-right: 1rem;
+}
+
+.u-text-align-left {
+  text-align: left;
+}
+
+.u-text-align-center {
+  text-align: center;
 }
 
 .btn {
@@ -101,11 +121,73 @@ h3 {
 
 .btnOrange {
   background-image: linear-gradient(to right, #f29b18, #f18f01);
+  color: #fff !important;
+}
+
+.btnPurple {
+  background-image: linear-gradient(to right, #8518f2, #5708A6);
+  color: #fff !important;
+  font-size: 1.8rem;
+}
+
+.btnRed {
+  background-image: linear-gradient(to right, rgba(233, 52, 52, 0.836), red);
   color: #fff;
+  font-size: 1.8rem;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.u-font-size-18 {
+  font-size: 1.8rem;
 }
 
 .link {
   text-decoration: none;
+}
+
+.updateForm,
+.createForm {
+  padding: 12rem 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.formContainer {
+  padding: 4rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  width: 50%;
+}
+.formContainer--orange {
+  background-image: linear-gradient(to right bottom, #f29b18, #f18f01);
+}
+.formContainer--purple {
+  background-image: linear-gradient(to right bottom, #8518f2, #5708A6);
+}
+
+.trueForm label {
+  display: block;
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+.trueForm input {
+  font-size: 1.8rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin: 1.5rem 0;
+  font-family: "Staatliches";
+  width: 100%;
+  color: #5708A6;
+}
+.trueForm input::placeholder {
+  font-family: "Staatliches";
+  color: #f18f01;
+  font-size: 1.8rem;
 }
 
 .header {
@@ -184,6 +266,27 @@ h3 {
 }
 .trip .city:not(:last-child) {
   margin-right: 1rem;
+}
+
+.indTrip {
+  padding: 14rem 8rem 16rem 8rem;
+}
+
+.tripDates {
+  margin-top: 4rem;
+  font-size: 4rem;
+  color: #5708A6;
+  letter-spacing: 0.3rem;
+}
+
+.citiesContainer {
+  margin: 2rem 0;
+}
+
+.tripCities {
+  font-size: 1.6rem;
+  color: #005FA6;
+  letter-spacing: 0.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

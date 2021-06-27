@@ -1,11 +1,23 @@
-<h1>Welcome to the individual trip page</h1>
+<section class="indTrip">
+  <h2 class="orangeLight heading-2">
+    <%= trip.tripName %>
+  </h2>
+  <p class="tripDates">
+    <%= trip.tripDates %>
+  </p>
+  <div class="citiesContainer">
+    <% trip.cities.forEach(city=> { %>
+      <p class="tripCities">
+        <%= city %>
+      </p>
+      <% }) %>
+  </div>
 
-<p>
-  <%= trip %>
-</p>
+  <a href="/trips/<%= trip._id%>/edit" class="btn btnOrange link u-margin-right-sm">Update Trip</a>
+  <div class="form form-delete ">
+    <form action="/trips/<%= trip._id%>/?_method=DELETE" method="POST">
+      <input type="submit" value="Delete" class="btn btnOrange ">
+    </form>
+  </div>
 
-<a href="/trips/<%= trip._id%>/edit">Update Trip</a>
-
-<form action="/trips/<%= trip._id%>/?_method=DELETE" method="POST">
-  <input type="submit" value="Delete">
-</form>
+</section>

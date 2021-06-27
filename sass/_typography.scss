@@ -12,10 +12,18 @@ h2 {
   letter-spacing: 1rem;
 }
 
+h2.orangeLight {
+  color: $orange-light;
+}
+
 h3 {
   font-size: 2.5rem;
   letter-spacing: .5rem;
   color: $orange-dark;
+}
+
+.heading-2 {
+  font-size: 5rem;
 }
 
 
@@ -78,8 +86,20 @@ h3 {
   margin-top: 1.5rem;
 }
 
+.u-margin-top-med {
+  margin-top: 2.5rem;
+}
+
 .u-margin-right-sm {
   margin-right: 1rem;
+}
+
+.u-text-align-left {
+  text-align: left;
+}
+
+.u-text-align-center {
+  text-align: center;
 }
 
 .btn {
@@ -96,9 +116,79 @@ h3 {
 
 .btnOrange {
   background-image: linear-gradient(to right, $orange-light, $orange-dark);
+  color: $white !important;
+}
+
+.btnPurple {
+  background-image: linear-gradient(to right, $purple-light, $purple-dark);
+  color: $white !important;
+  font-size: 1.8rem;
+}
+
+.btnRed {
+  background-image: linear-gradient(to right,rgba(233, 52, 52, 0.836), red);
   color: $white;
+  font-size: 1.8rem;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.u-font-size-18 {
+  font-size: 1.8rem;
 }
 
 .link {
   text-decoration: none;
+}
+
+.updateForm,
+.createForm {
+  padding: 12rem 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.formContainer {
+  
+  padding: 4rem;
+  border-radius: .5rem;
+  color: $white;
+  width: 50%;
+
+  &--orange {
+    background-image: linear-gradient(to right bottom, $orange-light, $orange-dark);
+  }
+
+  &--purple {
+    background-image: linear-gradient(to right bottom, $purple-light, $purple-dark);
+  }
+}
+
+.trueForm {
+  
+  & label {
+    display: block;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+  }
+
+  & input {
+    font-size: 1.8rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    margin: 1.5rem 0;
+    font-family: $display-font;
+    width: 100%;
+    color: $purple-dark;
+
+    &::placeholder {
+      font-family: $display-font;
+      color: $orange-dark;
+      font-size: 1.8rem;
+    }
+  }
 }

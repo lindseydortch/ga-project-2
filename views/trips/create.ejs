@@ -1,17 +1,26 @@
-<h2>
-  <span>My</span>
-  <span>Trips</span>
-</h2>
+<section class="createForm">
+  <div class="formContainer formContainer--purple">
+    <h2 class="oDark">
+      Add A Trip
+    </h2>
+    <div class="trueForm">
+      <form action="/trips" method="POST">
+        <div class="form-group">
+          <label for="tripName">Trip Name:</label>
+          <input type="text" name="tripName" id="tripName" placeholder="Trip Name">
+        </div>
+        <div class="form-group">
+          <label for="tripDates">Trip Dates:</label>
+          <input type="text" name="tripDates" id="tripDates" placeholder="Trip Dates">
+        </div>
+        <div class="form-group">
+          <label for="cities">Add a City</label>
+          <input type="text" name="cities" id="cities" placeholder="Add a City"
+            placeholder="Add destinations using a comma" </div>
+          <input type="submit" value="submit" class="btn btnOrange u-font-size-18">
+          <a href="/trips" class="btn btnRed link width-100 u-text-align-center">Cancel</a>
+      </form>
+    </div>
+  </div>
 
-<form action="/trips" method="POST">
-  <div class="form-group">
-    <label for="tripName">Trip Name:</label>
-    <input type="text" name="tripName" id="tripName">
-  </div>
-  <div class="form-group">
-    <label for="tripDates">Trip Dates:</label>
-    <input type="text" name="tripDates" id="tripDates">
-  </div>
-  <input type="submit" value="submit">
-  <a href="/trips">Cancel</a>
-</form>
+</section>

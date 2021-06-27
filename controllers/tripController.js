@@ -50,13 +50,18 @@ router.get('/trips/add', (req, res) => {
 
 // Post for create a trip
 router.post('/trips', (req, res) => {
-  Trip.create(req.body)
+  let cities = req.body.cities
+  let citiesSplit = cities.split(',')
+  Trip.create({
+    tripName: req.body.tripName,
+    tripDates: req.body.tripDates,
+    cities: citiesSplit
+  })
   .then((trips) => {
     res.redirect('/trips')
   })
   .catch(console.error)
 })
-
 
 
 // Edit individual trip 
@@ -91,11 +96,14 @@ router.get('/trips/:id', (req, res, next) => {
 
 router.put('/trips/:id', (req, res) => {
   const id = req.params.id
+  let cities = req.body.cities
+  let citiesSplit = cities.split(',')
   Trip.findOneAndUpdate(
     { _id: id },
     {
       tripName: req.body.tripName,
-      tripDates: req.body.tripDates
+      tripDates: req.body.tripDates,
+      cities: citiesSplit
     },
     { new: true}
   )
