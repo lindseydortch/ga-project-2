@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const mongoURI =
 process.env.NODE_ENV === 'production'
-? process.send.DB_URL
+? process.env.DB_URL
 : 'mongodb://localhost/project-2'
 
 mongoose
