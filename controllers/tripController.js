@@ -12,12 +12,9 @@ const Trip = require('../models/Trip.js')
 // ===============================================
 // Testing JSON
 router.get('/', (req, res) => {
-  // res.render('index.ejs')
-  Trip.find({})
-  .then((trips) => {
-    // console.log(trips[0].cities[0].city)
-    res.json(trips)
-  })
+  Trip.find({}) 
+  .then(trips => res.render('trips/trips.ejs', {trips: trips}))
+  // res.render('trips/trips.ejs', {trips: trips})
 })
 
 // ===============================================
