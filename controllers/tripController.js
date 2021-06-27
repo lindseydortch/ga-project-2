@@ -53,7 +53,6 @@ router.post('/trips', (req, res) => {
   .catch(console.error)
 })
 
-
 // ===============================================
 // Edit Individual Trip
 // ===============================================
@@ -68,8 +67,6 @@ router.get('/trips/:id/edit', (req, res, next) => {
   .catch(next)
 })
 
-
-
 // ===============================================
 // Find individual trip
 // ===============================================
@@ -83,7 +80,6 @@ router.get('/trips/:id', (req, res, next) => {
   })
   .catch(next)
 })
-
 
 // ===============================================
 // Update an individual trip
@@ -104,7 +100,7 @@ router.put('/trips/:id', (req, res) => {
   .then(
     Trip.findById(id)
     .then(trip => {
-      res.render('trips/trip.ejs', {trip: trip})
+      res.redirect(`/trips/${id}`)
     })
   )
 })

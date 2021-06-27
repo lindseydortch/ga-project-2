@@ -3,19 +3,19 @@
 // ==================================================================
 
 .trips-section {
-  padding: 12rem 0;
+  padding: 12rem 8rem;
   position: relative;
 }
 
 .trips {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
 
 .trip {
-  width: 30%;
+  width: 32%;
   padding: 6rem;
   border: 1px solid $grey-light;
   border-radius: 2rem;
