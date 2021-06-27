@@ -1,0 +1,52 @@
+.nav {
+  background-color: white;
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(40rem);
+  z-index: 1000;
+  border: 1px solid $grey-light;
+  transition: transform .3s ease-in;
+}
+
+#closeBtn {
+  font-size: 2.5rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  color: $orange-dark;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $purple-light;
+  }
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  color: $purple-light;
+}
+
+.nav_heading {
+  padding: 2rem;
+  border: 1px solid $grey-light;
+  color: $purple-light;
+  transition: color .3s ease-in;
+
+  &:hover,
+  &:focus {
+    color: $blue-dark;
+  }
+}
+
+// ==================================================================
+// NAVBAR ANIMATION
+// ==================================================================
+.navActive {
+  transform: translateX(0)
+}

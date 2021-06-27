@@ -198,10 +198,58 @@ h3 {
   align-items: center;
   border-bottom: 2px solid #ccc;
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .navBtn {
   font-size: 3rem;
+  cursor: pointer;
+}
+
+.nav {
+  background-color: white;
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(40rem);
+  z-index: 1000;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease-in;
+}
+
+#closeBtn {
+  font-size: 2.5rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  color: #f18f01;
+  cursor: pointer;
+}
+#closeBtn:hover, #closeBtn:focus {
+  color: #8518f2;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  color: #8518f2;
+}
+
+.nav_heading {
+  padding: 2rem;
+  border: 1px solid #ccc;
+  color: #8518f2;
+  transition: color 0.3s ease-in;
+}
+.nav_heading:hover, .nav_heading:focus {
+  color: #005FA6;
+}
+
+.navActive {
+  transform: translateX(0);
 }
 
 .footer {
