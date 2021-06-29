@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch:sass": "sass --watch sass/main.scss public/css/style.css",
+    "start:sass": "npm-run-all watch:sass",
     "start": "node index.js"
   },
   "keywords": [],

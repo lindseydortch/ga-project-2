@@ -1,0 +1,18 @@
+.mainHomepage {
+  // padding: 21rem 0;
+  background-color: $orange-dark;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.heading-3-home {
+  color: $white;
+  font-size: 4rem;
+  width: 55%;
+  text-align: center;
+}

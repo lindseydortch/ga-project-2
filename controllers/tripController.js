@@ -13,7 +13,7 @@ const Trip = require('../models/Trip.js')
 // Testing JSON
 router.get('/', (req, res) => {
   Trip.find({}) 
-  .then(trips => res.render('trips/trips.ejs', {trips: trips}))
+  .then(trips => res.render('index.ejs'))
   // res.render('trips/trips.ejs', {trips: trips})
 })
 

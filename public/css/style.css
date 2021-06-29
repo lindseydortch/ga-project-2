@@ -278,6 +278,23 @@ h3 {
   color: #f18f01;
 }
 
+.mainHomepage {
+  background-color: #f18f01;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-3-home {
+  color: #fff;
+  font-size: 4rem;
+  width: 55%;
+  text-align: center;
+}
+
 .trips-section {
   padding: 12rem 8rem;
   position: relative;
