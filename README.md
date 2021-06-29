@@ -6,7 +6,7 @@ POSSO is a travel planning app where you can plan out your next vacation. At the
 ## Technologies Used 
 - Front-End 
   - HTML with EJS 
-  - CSS 
+  - CSS / SASS 
   - JavaScript 
 - Backend 
   - NodeJS 
@@ -28,6 +28,7 @@ In order to start off the basics of my app, I started with connecting everything
 
 ## Future Functionality 
 As of now you can only add trips, but you can't add in the things you want to do and tie them to each individual city. My future goals for this project are: 
+- User authentication 
 - To be able to add in things to do within the given categories 
 - Switch out the date input on the front-end so you don't have to enter it manually
 - Be able to check a thing to do off from a city once you have visited and add any notes
